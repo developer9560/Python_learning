@@ -60,7 +60,7 @@ class Atm:
             amount = int(input("Enter the amount: "))
             self.__balance += amount
             print("Deposit successful")
-            self.menu()
+            self.menu()  
         else:
             print("Invalid pin")  
             self.menu()
@@ -103,7 +103,7 @@ class Atm:
 
     @staticmethod
     def set_counter(new_counter):
-        Atm.counter = new_counter   
+        Atm.counter = new_counter
 
 sib=Atm()
 print(id(sib))
